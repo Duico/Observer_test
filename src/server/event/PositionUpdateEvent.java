@@ -11,7 +11,7 @@ public class PositionUpdateEvent extends GridEvent {
      * @param source the object on which the Event initially occurred
      * @throws IllegalArgumentException if source is null
      */
-    public PositionUpdateEvent(Object source) {
-        super(source);
+    public PositionUpdateEvent(Object source, int startX, int destX) {
+        super(source, startX, destX);
     }
 }

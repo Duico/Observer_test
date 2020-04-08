@@ -7,11 +7,11 @@ public class Game {
     public Game(Controller controller){
         this.turn = new Turn();
 
-        turn.updatePosition(2 ,3);
         turn.addEventListener(controller);
+
     }
 
-    void update(int x, int y){
+    public void update(int x, int y){
         turn.updatePosition(x,y);
     }
 

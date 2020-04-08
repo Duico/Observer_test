@@ -14,7 +14,8 @@ public class Controller implements GridEventListener, TurnEventListener {
     public void handleEvent(GridEvent e) {
         //manda alla view il grid event se necessario
         e.getSource();
-        e.
+        System.out.println("Controller is passing to view:" + e.getDestPositionX());
+        System.out.println("Controller is passing to view:"+ e.getStartPositionX());
     }
 
     @Override

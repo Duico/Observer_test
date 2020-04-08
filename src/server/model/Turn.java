@@ -21,7 +21,7 @@ public class Turn extends SantoriniObservable {
         currPosX = newPosX;
         currPosY = newPosY;
         //emit event UpdatedPosition (newX newY)
-        this.fireMyEvent(new PositionUpdateEvent(grid, "Message"));
+        this.fireMyEvent(new PositionUpdateEvent(grid, newPosX, newPosY));
     }
 
 
